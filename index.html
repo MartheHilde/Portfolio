@@ -5,8 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Marthe Hilde">
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://app.embed.im/snow.js" defer></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <!-- Navbar start-->
@@ -35,39 +36,46 @@
         <!-- Slutt på velkomst -->
         <!-- Projects -->
         <section id="projects">
-            <h2 class="project-header">Some of my work:</h2>
-            <br>
-            <div class="project-tile">
-                <p id="summary"> An ice-cream survey form made from a project in freeCodeCamp's responsive web-design course: 
-                <br><a href="https://marthehilde.github.io/Survey-form/"><img src="">Survey form</a></p>
-                <br>
-                <p id="summary">A technical documentation page showcasing an interactive navigation bar. Project from freeCodeCamp's responsive web-design course: 
-                <br><a href="https://marthehilde.github.io/Technical-documentation-page/"><img src="">Technical documentation page</a></p>
-                <br>
-                <p id="summary">A tribute page for Freddy Mercury - a project from freeCodeCamp's responsive web-design course: 
-                <br><a href="https://marthehilde.github.io/Tribute-page/"><img src="">Tribute page</a></p>
-                <br>
-                <p id="summary">A game programmed using Vanilla JavaScript containing a falling ball: 
-                <br><a href="https://github.com/MartheHilde/FallBall">Fall-Ball Game</a></p>
-                <br>
-                <p id="summary">A game programmed using vanilla JavaScript, a Flappy-bird-style copy: 
-                <br><a href="https://github.com/MartheHilde/Jump">Flappy-jump Game</a></p>
-                <br>
-                
+            <h3 class="project-header">Some of my work:</h3>
+            <div class="project-tiles">
+                <div class="project-tile">
+                    <a href="https://marthehilde.github.io/Plants/" target="_blank">
+                        <img src="img/plantsite.png" alt="Plant Page">
+                        <p class="project-title">Plant Page</p>
+                    </a>
+                    <p class="project-description">A page for my green plants - a project where plants are stored with basic information in a JSON file.</p>
+                </div>
+        
+                <div class="project-tile">
+                    <a href="https://github.com/MartheHilde/FallBall" target="_blank">
+                        <img src="https://via.placeholder.com/150" alt="Fall-Ball Game">
+                        <p class="project-title">Fall-Ball Game</p>
+                    </a>
+                    <p class="project-description">A game programmed using Vanilla JavaScript containing a falling ball.</p>
+                </div>
+        
+                <div class="project-tile">
+                    <a href="https://github.com/MartheHilde/Jump" target="_blank">
+                        <img src="https://via.placeholder.com/150" alt="Flappy-jump Game">
+                        <p class="project-title">Flappy-Jump Game</p>
+                    </a>
+                    <p class="project-description">A game programmed using Vanilla JavaScript, a Flappy-bird-style copy.</p>
+                </div>
             </div>
         </section>
+        
         <!-- Slutt på Projects -->
         <!-- Kontaktinformasjon -->
         <br>
         <section id="contact" class="contact-section">
             <div class="contact-header">
-                <h2>Want to get in touch?</h2>
+                <h3>Want to get in touch?</h3>
                 <p>Reach out and let's grab a virtual coffee!</p>
             </div>
             <div class="links-contact">
                 <ul class="contactlist">
                 <li>
-                    <a href="https://twitter.com/marthehildeDev" class="twitter-follow-button" data-show-count="false">Follow @marunnie1</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <a href="https://twitter.com/MarthesBackend" class="twitter-follow-button" data-show-count="false">Follow @MarthesBackend</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </li>
                     <br>
                 <li>
