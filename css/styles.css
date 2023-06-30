@@ -6,7 +6,7 @@
 :root {
     --main-text: #444444;
     --body-background: #F8F8F8;
-    --menu-background: #2C3E50;
+    --menu-background: #f5d1eb;
     --link-color: #3498DB;
     --header-color: #333333;
     --project-title-color: #333333;
@@ -22,6 +22,15 @@ body {
     color: var(--main-text);
     background-color: var(--body-background);
     font-family: 'futura', oswald;
+}
+
+#profilepic {
+    width: 250px;
+    border-radius: 25%;
+}
+
+#profile {
+    margin-top: 20px;
 }
 
 a:link {
