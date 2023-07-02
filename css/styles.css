@@ -6,10 +6,10 @@
 :root {
     --main-text: #444444;
     --body-background: #F8F8F8;
-    --menu-background: #f5d1eb;
-    --link-color: #3498DB;
-    --header-color: #333333;
-    --project-title-color: #333333;
+    --menu-background: #202020;
+    --link-color: #fdd8ff;
+    --header-color: #202020;
+    --project-title-color: #202020;
     --project-description-color: #555555;
     --contact-header-color: #333333;
     --contact-links-color: #555555;
@@ -38,7 +38,7 @@ a:link {
 }
 
 a:hover {
-    color: var(--header-color);
+    color:rgb(100, 100, 100);
 }
 
 .nav {
