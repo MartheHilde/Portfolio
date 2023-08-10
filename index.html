@@ -5,13 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Marthe Hilde">
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <!-- Navbar start-->
-        <nav id="navbar" class="nav">
+        <!--Fjernet navbar-->
+        <!-- <nav id="navbar" class="nav">
             <ul class="nav-list">
             <li>
                 <a href="#projects">Work</a>
@@ -22,18 +25,29 @@
             </li>
             </ul>
         </nav>
+         -->
         <!-- Navbar slutt-->
         <!-- Velkomstdel -->
         <div class="body-content">
         <section id="welcome-section" class="welcome-part">
-            <h1>Marthe Hilde</h1>
-            <img src="img/profile.jpeg" id="profilepic">
-            <p id="profile">Development student based in Bergen, Norway</p>
+            <div class="card">
+                <div class="box">
+                    <div class="img">
+                        <img id="profilepic" src="img/profile.jpeg">
+                    </div>
+                    <h2>Marthe Hilde<br><span>Backend Development student based in Bergen, Norway</span></h2>
+                    <p> Passionate about learning and utilizing new technologies.</p>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/marthe-hilde-8a8a1488/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                        <li><a href="" target="_blank"><i class="bi bi-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <!-- Slutt på velkomst -->
         <!-- Projects -->
         <section id="projects">
-            <h3 class="project-header">Some of my work</h3>
+            <h3 class="project-header">Projects</h3>
             <p>All source-code is accessible on my <a href="https://github.com/MartheHilde" target="_blank">Github</a></p>
             <div class="project-tiles">
                 <div class="project-tile">
@@ -49,7 +63,7 @@
                         <img src="img/SP.png" alt="School semester project">
                         <p class="project-title">Semester project</p>
                     </a>
-                    <p class="project-description">Noroff backend development semester project - staff management table.</p>
+                    <p class="project-description">School semester project - staff management table where tables are filled with staff employees with a function for checking if an employer is late from a break, or from a scheduled delivery.</p>
                 </div>
 
                 <div class="project-tile">
@@ -57,7 +71,7 @@
                         <img src="img/pomodoroplanning.png" alt="Pomodoro prototype exam project">
                         <p class="project-title">Pomodoro Exam protoype</p>
                     </a>
-                    <p class="project-description">A prototype of my Pomodoro-app, developed for my exam in Interactive design.</p>
+                    <p class="project-description">A prototype of my Pomodoro-app, developed for my exam in Interactive design at OsloMet university.</p>
                 </div>
         
                 <div class="project-tile">
@@ -65,7 +79,7 @@
                         <img src="img/game.png" alt="Fall-Ball Game">
                         <p class="project-title">Fall-Ball Game</p>
                     </a>
-                    <p class="project-description">A game programmed using Vanilla JavaScript containing a falling ball.</p>
+                    <p class="project-description">A game programmed using Vanilla JavaScript containing a falling ball. Keep the ball falling and you'll win.. Always!</p>
                 </div>
 
                 <div class="project-tile">
@@ -73,7 +87,7 @@
                         <img src="img/ducky.png" alt="Talking duck app">
                         <p class="project-title">Talking duck app</p>
                     </a>
-                    <p class="project-description">App using text-to-speech with vanilla JavaScript, as a talking duck.</p>
+                    <p class="project-description">App using text-to-speech with vanilla JavaScript, as a talking duck. [Works best in newer versions of Chrome]</p>
                 </div>
 
                 <div class="project-tile">
@@ -95,10 +109,6 @@
             </div>
             <div class="links-contact">
                 <ul class="contactlist">
-                <li>
-                    <a href="https://twitter.com/MarthesBackend" class="twitter-follow-button" data-show-count="false">Follow @MarthesBackend</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </li>
-                    <br>
                 <li>
                     <a href="https://github.com/MartheHilde" target="_blank"><i class="fab fa-github"></i> Github</a>
                     </li>
